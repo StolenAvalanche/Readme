@@ -1,0 +1,8 @@
+.postCat, .postDate {
+    display: flex;
+}
+
+.postTitle {
+    display: flex;
+    
+}
