@@ -1,16 +1,17 @@
 import React from "react"
 import "./navbar.css" 
+import {Link} from "react-router-dom"
 
 export default function navbar() {
     return (
         <div className="nav">
             <div className="topLeft">
                 <ul className="navBarList">
-                    <li className="navBarItem"><a href="./Pages.Home.home.jsx">Home</a></li>
-                    <li className="navBarItem"><a href="./Pages.Blogs.blogs.jsx">Blogs</a></li>
-                    <li className="navBarItem"><a href="./Pages.About.about.jsx">About</a></li>
-                    <li className="navBarItem"><a href="./Pages.Contact.contact.jsx">Contact</a></li>
-                    <li className="navBarItem"><a href="./Pages.Log In.login.jsx">Log In</a></li>
+                    <li className="navBarItem"><Link to="/home">Home</Link></li>
+                    <li className="navBarItem"><Link to="/blogs">Blogs</Link></li>
+                    <li className="navBarItem"><Link to="/about">About</Link></li>
+                    <li className="navBarItem"><Link to="/contact">Contact</Link></li>
+                    <li className="navBarItem"><Link to="/login">Log In</Link></li>
                 </ul>
             </div>
             <div className="topRight">
